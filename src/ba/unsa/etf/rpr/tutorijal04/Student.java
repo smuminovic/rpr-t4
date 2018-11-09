@@ -3,19 +3,18 @@ package ba.unsa.etf.rpr.tutorijal04;
 import java.util.ArrayList;
 
 public class Student {
-    private String imeStudenta;
-    private int brojIndeksa;
-    private int godinaStudija;
+    private String imeStudenta; //ok
+    private int brojIndeksa; //ok
+    int semestar;
     private ArrayList<Predmet> predmeti;
     //konstruktor
-    public Student(String ime, int indeks, int godina) {
+    public Student(String ime, int indeks, int semestar) {
         this.brojIndeksa = indeks;
         this.imeStudenta = ime;
-        this.godinaStudija = godina;
+        this.semestar = semestar;
     }
-    //koje predmete sluša student, da ispiše (poziva se nad studentom)
+    //koje predmete sluša student
     public void spisakPredmeta() {}
-    //set i get
     public void setImeStudenta(String imeStudenta) {
         this.imeStudenta = imeStudenta;
     }
@@ -24,8 +23,8 @@ public class Student {
         this.brojIndeksa = brojIneksa;
     }
 
-    public void setGodinaStudija(int godinaStudija) {
-        this.godinaStudija = godinaStudija;
+    public void setSemestar(int semestar) {
+        this.semestar = semestar;
     }
 
     public void setPredmeti(ArrayList<Predmet> predmeti) {
@@ -39,8 +38,8 @@ public class Student {
         return brojIndeksa;
     }
 
-    public int getGodinaStudija() {
-        return godinaStudija;
+    public int getSemestar() {
+        return semestar;
     }
 
     public ArrayList<Predmet> getPredmeti() {

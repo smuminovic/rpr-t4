@@ -3,9 +3,9 @@ package ba.unsa.etf.rpr.tutorijal04;
 import java.util.ArrayList;
 
 public class Predmet {
-    private String imePredmeta;
-    private int brojEcts;
-    private int sifraPredmeta;
+    private String imePredmeta; //ok
+    private int brojEcts; //ok
+    private int sifraPredmeta; //ok
     private ArrayList<Student> studenti;
     //konstruktor
     public Predmet(String ime, int ects, int sifra) {

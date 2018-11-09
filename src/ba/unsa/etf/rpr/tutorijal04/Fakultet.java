@@ -4,12 +4,13 @@ import java.util.ArrayList;
 
 public class Fakultet {
     private String imeFakulteta;
-    private PlanStudija vrstaStudija;
-    private ArrayList<Student> studentiNaFakultetu;
+    private ArrayList<Predmet> sviPredmetiNaFakultetu;
+    private ArrayList<Student> sviStudentiNaFakultetu;
 
     public Fakultet(String imeFakulteta) {
         this.imeFakulteta = imeFakulteta;
     }
+
     public String getImeFakulteta() {
         return imeFakulteta;
     }
@@ -18,22 +19,21 @@ public class Fakultet {
         this.imeFakulteta = imeFakulteta;
     }
 
-    public PlanStudija getVrstaStudij() {
-        return vrstaStudija;
+    public ArrayList<Student> geSviStudentiNafakultetu() {
+        return sviStudentiNaFakultetu;
     }
 
-    public void setVrstaStudij(PlanStudija vrstaStudij) {
-        this.vrstaStudija = vrstaStudij;
+    public ArrayList<Predmet> getSviPredmetiNaFakultetu() {
+        return sviPredmetiNaFakultetu;
     }
 
-    public ArrayList<Student> getStudentiNaFakultetu() {
-        return studentiNaFakultetu;
+    public void setSviPredmetiNaFakultetu(ArrayList<Predmet> predmeti) {
+        this.sviPredmetiNaFakultetu = predmeti;
     }
 
-    public void setStudentiNaFakultetu(ArrayList<Student> studentiNaFakultetu) {
-        this.studentiNaFakultetu = studentiNaFakultetu;
+    public void setSviStudentiNaFakultetu(ArrayList<Student> studenti) {
+        this.sviStudentiNaFakultetu = studenti;
     }
-
     public void upisiStudentaNaFakultet() {};
     public void upisiStudentaNaPredmet() {};
     public void ispisiStudentaSaFakulteta() {};

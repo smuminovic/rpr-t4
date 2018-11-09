@@ -1,28 +1,18 @@
 package ba.unsa.etf.rpr.tutorijal04;
 
+import java.util.ArrayList;
+
 public class PlanStudija {
-    private int godina;
-    private int ciklus;
-    //konstruktor
-    public PlanStudija(int ciklus, int godina) {
-        this.godina = godina;
-        this.ciklus = ciklus;
-    }
-    //set i get
+    ArrayList<Predmet> izborni;
+    ArrayList<Predmet> obavezni;
 
-    public int getGodina() {
-        return godina;
+    public PlanStudija(ArrayList<Predmet> izborni, ArrayList<Predmet> obavezni) {
+        this.izborni = izborni;
+        this.obavezni = obavezni;
     }
 
-    public void setGodina(int godina) {
-        this.godina = godina;
-    }
-
-    public int getCiklus() {
-        return ciklus;
-    }
-
-    public void setCiklus(int ciklus) {
-        this.ciklus = ciklus;
-    }
+    public void dodajIzborniPredmet(Predmet predmet) {}
+    public void dodajObavezniPredmet(Predmet predmet) {}
+    public void izbrisiIzborniPredmet(Predmet predmet) {}
+    public void izbrisiObavezniPredmet(Predmet predmet) {}
 }
